@@ -1,176 +1,337 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Cloé Delage</title>
+    <title>Portfolio - Créatif Designer</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
     <script src="java.js" defer></script>
 </head>
+
 <body>
 
-    <nav>
-        <div class="logo">CD</div>
-        <ul class="nav-links">
-            <li><a href="#projets">Projets</a></li>
-            <li><a href="#apropos">À propos</a></li>
-            <li><a href="#parcours">Parcours</a></li>
-        </ul>
-    </nav>
+    <div id="customCursor"></div>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="marquee-container">
-            <div class="marquee">
-                <span>WEB DESIGN ✱ </span>
-                <span>CRÉATION GRAPHIQUE ✱ </span>
-                <span>DÉVELOPPEMENT WEB ✱ </span>
-                <span>WEB DESIGN ✱ </span>
-                <span>CRÉATION GRAPHIQUE ✱ </span>
-                <span>DÉVELOPPEMENT WEB ✱ </span>
-            </div>
-        </div>
-        <div class="marquee-container">
-            <div class="marquee" style="animation-duration: 25s; animation-direction: reverse;">
-                <span>BIENVENUE SUR MON PORTFOLIO ✱ </span>
-                <span>BIENVENUE SUR MON PORTFOLIO ✱ </span>
-                <span>BIENVENUE SUR MON PORTFOLIO ✱ </span>
-                <span>BIENVENUE SUR MON PORTFOLIO ✱ </span>
-            </div>
-        </div>
-        <div class="marquee-container">
-            <div class="marquee" style="animation-duration: 35s;">
-                <span>AUDIOVISUEL ✱</span>
-                <span>MOTION DESIGN ✱</span>
-                <span>UI/UX ✱</span>
-                <span>AUDIOVISUEL ✱ </span>
-                <span>MOTION DESIGN  </span>
-                <span>UI/UX ✱ </span>
-            </div>
-        </div>
-        <div class="hero-content">
-            <h1>Cloé Delage</h1>
-            <p>Étudiante en Web Design & Multimédia</p>
+    <section class="hero" id="home">
+        <div id="p5-container" style="width: 100%; display: flex; justify-content: center; margin: 40px 0;"></div>
+
+        <div class="container">
+            <h1 class="hero-title">
+                <span class="title">PORT</span>
+                <span class="title">FOLIO</span>
+            </h1>
+
+            <p class="subtitle"> 2025 </p>
         </div>
     </section>
 
-    <!-- Projets -->
-    <section id="projets">
-        <h2 class="section-title">Mes Projets</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>Design Graphique</h3>
-                <p>Création de cartes de tarot avec une identité visuelle unique, combinant illustrations vectorielles et travail matriciel pour un rendu artistique et moderne.</p>
-                <span class="project-tag">Illustrator</span>
-                <span class="project-tag">Photoshop</span>
-            </div>
-            <div class="project-card">
-                <h3>Stickers Soft & Hard Skills</h3>
-                <p>Conception d'une collection de stickers reflétant les compétences professionnelles et personnelles, avec un style graphique contemporain et des illustrations vectorielles soignées.</p>
-                <span class="project-tag">Illustrator</span>
-                <span class="project-tag">Design</span>
-            </div>
-            <div class="project-card">
-                <h3>Motion Graphique</h3>
-                <p>Réalisation d'animations graphiques et de vidéos en stop motion, mêlant créativité et technique pour des contenus visuels captivants.</p>
-                <span class="project-tag">Animation</span>
-                <span class="project-tag">Vidéo</span>
-            </div>
-            <div class="project-card">
-                <h3>Prototypes Web</h3>
-                <p>Création de maquettes et prototypes de sites internet avec une attention particulière portée à l'expérience utilisateur. Développement de wireframes et userflows pour optimiser la navigation.</p>
-                <span class="project-tag">Figma</span>
-                <span class="project-tag">UX/UI</span>
-            </div>
-            <div class="project-card">
-                <h3>Développement Web</h3>
-                <p>Conception et développement de sites web fonctionnels avec HTML, CSS, JavaScript, PHP et SQL. Mise en ligne et hébergement des projets réalisés.</p>
-                <span class="project-tag">HTML/CSS</span>
-                <span class="project-tag">JavaScript</span>
-                <span class="project-tag">PHP</span>
-            </div>
-            <div class="project-card">
-                <h3>Production Audiovisuelle</h3>
-                <p>Réalisation d'interviews, tournages et montages vidéo. Création de contenus audiovisuels complets de la prise de vue au montage final.</p>
-                <span class="project-tag">DaVinci Resolve</span>
-                <span class="project-tag">Montage</span>
+    <div class="marquee">
+        <span>PROJETS SÉLECTIONNÉS ✱ PROJETS SÉLECTIONNÉS ✱ PROJETS SÉLECTIONNÉS ✱ PROJETS SÉLECTIONNÉS ✱ </span>
+    </div>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container2">
+            <div class="about-content">
+                <p class="about-description">
+                    Tout d'abord, bienvenue sur mon portfolio.
+
+                    Je me nomme Cloé , j'ai 19 ans et je suis originaire de Bergerac. Je réalise des études en BUT MMI à
+                    Limoges et grâce à
+                    ça, je me suis découvert une passion pour le webdesign et le graphisme.
+
+                    Je suis une personne créative, qui adore faire des découvertes et apprendre de nombreuses choses, un
+                    peu timide mais qui
+                    a la joie de vivre.
+
+                    En espérant que mon profil vous plaira, je vous laisse explorer mon portfolio.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- À propos -->
-    <section id="apropos">
-        <h2 class="section-title">À Propos</h2>
-        <div class="about-content">
-            <p>Je suis étudiante en première année de BUT Métiers du Multimédia et de l'Internet à l'Université de Limoges. Passionnée par la création graphique et le web design, je combine créativité et compétences techniques pour concevoir des projets visuels innovants.</p>
-            <p>Mon parcours m'a permis de développer une expertise en design graphique, développement web, et audiovisuel. Je maîtrise les outils de création numérique et j'aime transformer des idées en expériences visuelles marquantes.</p>
-            <div class="skills-list">
-                <div class="skill-item">Illustrator</div>
-                <div class="skill-item">Photoshop</div>
-                <div class="skill-item">Figma</div>
-                <div class="skill-item">HTML/CSS</div>
-                <div class="skill-item">JavaScript</div>
-                <div class="skill-item">PHP/SQL</div>
-                <div class="skill-item">DaVinci Resolve</div>
-                <div class="skill-item">Motion Design</div>
+    <!-- Projects Section -->
+    <section class="projects" id="projets">
+        <div class="container3">
+            <h2 class="section-title">
+                Projets <span class="text-gray">sélectionnés</span>
+            </h2>
+
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                    <div class="carousel-track" id="carouselTrack">
+                        <!-- Slide 1 -->
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1200" alt="Branding">
+                            <div class="project-overlay">
+                                <span class="project-category">GRAPHISME</span>
+                                <h3 class="project-title">Projet Branding</h3>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200"
+                                alt="E-commerce">
+                            <div class="project-overlay">
+                                <span class="project-category">WEB DESIGN</span>
+                                <h3 class="project-title">Site E-commerce</h3>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1200"
+                                alt="Motion Design">
+                            <div class="project-overlay">
+                                <span class="project-category">AUDIOVISUEL</span>
+                                <h3 class="project-title">Motion Design</h3>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200"
+                                alt="App Mobile">
+                            <div class="project-overlay">
+                                <span class="project-category">UI/UX DESIGN</span>
+                                <h3 class="project-title">Application Mobile</h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1200" alt="Branding">
+                            <div class="project-overlay">
+                                <span class="project-category">GRAPHISME</span>
+                                <h3 class="project-title">Projet Branding</h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1200" alt="Branding">
+                            <div class="project-overlay">
+                                <span class="project-category">GRAPHISME</span>
+                                <h3 class="project-title">Projet Branding</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1200" alt="Branding">
+                            <div class="project-overlay">
+                                <span class="project-category">GRAPHISME</span>
+                                <h3 class="project-title">Projet Branding</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1200" alt="Branding">
+                            <div class="project-overlay">
+                                <span class="project-category">GRAPHISME</span>
+                                <h3 class="project-title">Projet Branding</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1200" alt="Branding">
+                            <div class="project-overlay">
+                                <span class="project-category">GRAPHISME</span>
+                                <h3 class="project-title">Projet Branding</h3>
+                            </div>
+                        </div>
+                      
+                    </div>
+                </div>
+
+                <!-- Boutons de navigation -->
+                <button class="carousel-btn prev" id="prevBtn">‹</button>
+                <button class="carousel-btn next" id="nextBtn">›</button>
+
+                <!-- Indicateurs -->
+                <div class="carousel-indicators" id="carouselIndicators"></div>
+            </div>
+        </div>
+
+        <div class="marquee">
+            <span>PROJETS SÉLECTIONNÉS ✱ PROJETS SÉLECTIONNÉS ✱ PROJETS SÉLECTIONNÉS ✱ PROJETS SÉLECTIONNÉS ✱ </span>
+        </div>
+    </section>
+
+    <!-- Contact Cards Section -->
+    <section class="contact-cards">
+        <div class="container2">
+            <h2 class="section-title">Retrouvez-moi</h2>
+            <div class="cards-grid">
+                <div class="contact-card">
+                    <svg class="card-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                        <polyline points="14 2 14 8 20 8" />
+                    </svg>
+                    <h3>Mon CV</h3>
+                    <p>Télécharger</p>
+                    <svg class="card-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor">
+                        <line x1="7" y1="17" x2="17" y2="7" />
+                        <polyline points="7 7 17 7 17 17" />
+                    </svg>
+                </div>
+
+                <div class="contact-card">
+                    <svg class="card-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect x="2" y="9" width="4" height="12" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                    <h3>LinkedIn</h3>
+                    <p>Me suivre</p>
+                    <svg class="card-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor">
+                        <line x1="7" y1="17" x2="17" y2="7" />
+                        <polyline points="7 7 17 7 17 17" />
+                    </svg>
+                </div>
+
+                <div class="contact-card">
+                    <svg class="card-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                        <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                    <h3>Email</h3>
+                    <p>Me contacter</p>
+                    <svg class="card-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor">
+                        <line x1="7" y1="17" x2="17" y2="7" />
+                        <polyline points="7 7 17 7 17 17" />
+                    </svg>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Parcours -->
-    <section id="parcours">
-        <h2 class="section-title">Mon Parcours</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-date">2024 - en cours</div>
-                    <h3>BUT Métiers du Multimédia et de l'Internet</h3>
-                    <p>Université de Limoges - Formation en web design, création numérique, stratégie de communication et développement web.</p>
+    <div class="disco-divider">
+        <div class="disco-ball">
+            <div class="disco-lights"></div>
+            <div class="disco-lights"></div>
+            <div class="disco-lights"></div>
+            <div class="disco-lights"></div>
+        </div>
+        <div class="retro-line left"></div>
+        <div class="retro-line right"></div>
+        <div class="floating-star star-1">✦</div>
+        <div class="floating-star star-2">★</div>
+        <div class="floating-star star-3">✦</div>
+    </div>
+    <!-- Skills Section -->
+    <section class="skills">
+        <div class="container2">
+            <h2 class="section-title">Mes Outils</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm0 2c1.8 0 3.4.5 4.9 1.3L2.3 17.9C1.5 16.4 1 14.8 1 13c0-6.1 4.9-11 11-11z" />
+                        </svg>
+                    </div>
+                    <span>Figma</span>
                 </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-date">2024</div>
-                    <h3>Baccalauréat Général</h3>
-                    <p>Lycée Maine de Biran, Bergerac - Spécialités Mathématiques et Sciences de l'Ingénieur.</p>
+
+                <div class="skill-card">
+                    <div class="skill-icon">Ps</div>
+                    <span>Photoshop</span>
                 </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-date">Octobre 2024 - en cours</div>
-                    <h3>Vendeuse</h3>
-                    <p>Kiabi, Bergerac - Expérience en communication client et gestion de la vente.</p>
+
+                <div class="skill-card">
+                    <div class="skill-icon">Ai</div>
+                    <span>Illustrator</span>
                 </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-date">Été 2024</div>
-                    <h3>Serveuse</h3>
-                    <p>McDonald's & Restaurant, Bergerac - Développement de compétences en travail d'équipe et gestion du stress.</p>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4.5 12.75a6 6 0 1113.5-3.375 6 6 0 11-13.5 3.375z" />
+                        </svg>
+                    </div>
+                    <span>WordPress</span>
                 </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-date">Été 2022 & 2023</div>
-                    <h3>Agent de Production</h3>
-                    <p>HMS-Vilgo, Bergerac - Maîtrise des équipements de production et travail en équipe.</p>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                        </svg>
+                    </div>
+                    <span>HTML</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M1.5 1.5l2.1 18.9L12 23l8.4-2.6L22.5 1.5H1.5zm14.7 6.6h-7.5l.3 2.7h6.9l-.9 9.3-3 .9-3-.9-.2-2.4H6.6l.4 4.8 5.5 1.5 5.5-1.5.7-8.1H7.5L7.2 8.1h9.9l.1-2.7z" />
+                        </svg>
+                    </div>
+                    <span>CSS</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-info">
-            <div class="contact-item">
-                <a href="mailto:Cloedelage12@gmail.com">Cloedelage12@gmail.com</a>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container2">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>CONTACT</h4>
+                    <p>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                        contact@example.com
+                    </p>
+                    <p>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                        +33 6 00 00 00 00
+                    </p>
+                    <p>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect x="2" y="9" width="4" height="12" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                        LinkedIn
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>NAVIGATION</h4>
+                    <p><a href="#projets">Projets</a></p>
+                    <p><a href="#about">À propos</a></p>
+                    <p><a href="#contact">Contact</a></p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>DISPONIBILITÉ</h4>
+                    <p class="availability">
+                        <span class="status-dot"></span>
+                        Disponible pour un projet
+                    </p>
+                </div>
             </div>
-            <div class="contact-item">
-                <a href="tel:0766870951">07 66 87 09 51</a>
-            </div>
-            <div class="contact-item">
-                <p style="color: #C8B99C;">Bergerac,France</p>
+
+            <div class="footer-bottom">
+                <div class="logo">Portfolio.</div>
+                <p>© 2025 — Tous droits réservés</p>
+                <a href="#home" class="back-top">Retour en haut ↑</a>
             </div>
         </div>
-    </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
