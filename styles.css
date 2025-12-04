@@ -28,6 +28,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 /* Canvas P5.js */
@@ -394,7 +395,6 @@ position: fixed !important;
         inset 0 0 0 30px var(--text-pink);
     animation: rotate-vinyl 20s linear infinite;
 }
-
 .skill-card:hover {
     transform: scale(1.2);
     animation-play-state: paused;
@@ -403,6 +403,11 @@ position: fixed !important;
         inset 0 0 0 10px var(--accent),
         inset 0 0 0 20px var(--orange),
         inset 0 0 0 30px var(--text-pink);
+}
+
+.skill-card:hover .skill-icon,
+.skill-card:hover span {
+    animation-play-state: paused;
 }
 
 @keyframes rotate-vinyl {
@@ -415,7 +420,7 @@ position: fixed !important;
     position: absolute;
     width: 50px;
     height: 50px;
-    background: var(--bg-light);
+    
     border-radius: 50%;
     box-shadow: 0 0 0 6px var(--text-main);
 }
@@ -628,7 +633,7 @@ position: fixed !important;
 
 }
 
-.hero 
+.hero {
     height: 100vh;
     display: flex;
     align-items: center; 
@@ -680,7 +685,6 @@ position: fixed !important;
 .marquee {
     display: flex;
     white-space: nowrap;
-    animation: scroll 30s linear infinite;
     overflow: hidden;
 }
 
@@ -689,8 +693,10 @@ position: fixed !important;
     letter-spacing: 5px;
     padding: 0 2rem;
     padding-top: 10rem;
+    padding-bottom: 10rem;
     color: #e96f7f;
     font-weight: bold;
+    animation: scroll 60s linear infinite;
 }
 
 @keyframes scroll {
@@ -702,7 +708,7 @@ position: fixed !important;
     padding: 10rem 0;
     position: relative;
     background: var(--bg-light);
-    margin: 8rem 0;
+ 
 }
 
 .about-description {
