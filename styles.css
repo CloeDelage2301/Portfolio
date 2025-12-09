@@ -16,9 +16,6 @@
 body {
     background: var(--bg-dark);
     color: var(--text-main);
-    /* overflow-x: hidden; 
-     overflow-y: scroll !important;
-    -webkit-overflow-scrolling: touch; */
     margin: 0;
     font-family: 'Righteous', cursive;
     cursor: none;
@@ -635,7 +632,7 @@ body {
 }
 
 .hero {
-    height: 100vh;
+   
     display: flex;
     align-items: center; 
     justify-content: center;
