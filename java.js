@@ -2,15 +2,20 @@
         let targetSize = 20;
         let isClicking = false;
 
-        function setup() {
-            let canvas = createCanvas(windowWidth, windowHeight);
-            canvas.position(0, 0);
-            canvas.style('position', 'fixed');
-            canvas.style('top', '0');
-            canvas.style('left', '0');
-            canvas.style('pointer-events', 'none');
-            canvas.style('z-index', '99999');
-        }
+function setup() {
+    // Empêcher le curseur p5.js sur mobile
+    if (!window.matchMedia('(pointer: fine)').matches) {
+        return;
+    }
+
+    let canvas = createCanvas(windowWidth, windowHeight);
+    canvas.position(0, 0);
+    canvas.style('position', 'fixed');
+    canvas.style('top', '0');
+    canvas.style('left', '0');
+    canvas.style('pointer-events', 'none');
+    canvas.style('z-index', '99999');
+}
 
         function draw() {
             clear();
