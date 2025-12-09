@@ -17,7 +17,8 @@ body {
     background: var(--bg-dark);
     color: var(--text-main);
     overflow-x: hidden; 
-    overflow-y: auto; 
+     overflow-y: scroll !important;
+    -webkit-overflow-scrolling: touch;
     margin: 0;
     font-family: 'Righteous', cursive;
     cursor: none;
