@@ -443,7 +443,7 @@ body {
     background: linear-gradient(180deg, var(--orange) 0%, var(--text-pink) 100%);
     padding: 8rem 0 3rem;
     position: relative;
-    overflow: hidden;
+   
     margin-top: 8rem;
 }
 
@@ -683,7 +683,7 @@ body {
 .marquee {
     display: flex;
     white-space: nowrap;
-    overflow: hidden;
+    
 }
 
 .marquee span {
