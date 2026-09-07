@@ -2,354 +2,174 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Créatif Designer</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
-    <script src="java.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio — Cloé Delage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@900&family=Darker+Grotesque:wght@800&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+    <header class="header">
+        <a class="logo" href="#accueil">CD</a>
 
-    <div id="customCursor"></div>
+        <nav class="nav" aria-label="Navigation principale">
+            <a href="#accueil">Accueil</a>
+            <a href="#realisations">Mes réalisations</a>
+        </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div id="p5-container" style="width: 100%; display: flex; justify-content: center; margin: 40px 0;"></div>
+        <a class="btn-contact" href="#contact">Contact</a>
+    </header>
 
-        <div class="container">
-            <h1 class="hero-title">
-                <span class="title">PORT</span>
-                <span class="title">FOLIO</span>
-            </h1>
+    <main>
+        <section class="hero" id="accueil">
+            <div class="hero-top">
+                <svg class="scribble scribble-left" viewBox="0 0 40 32" aria-hidden="true">
+                    <path d="M4 20 C12 8, 20 8, 36 16" fill="none" stroke="#ec89b0" stroke-width="3"
+                        stroke-linecap="round" />
+                    <path d="M10 8 C16 22, 22 26, 28 30" fill="none" stroke="#ec89b0" stroke-width="3"
+                        stroke-linecap="round" />
+                    <path d="M22 6 C20 16, 22 24, 30 30" fill="none" stroke="#ec89b0" stroke-width="3"
+                        stroke-linecap="round" />
+                </svg>
 
-            <p class="subtitle"> 2025 </p>
-        </div>
-    </section>
+                <p class="hero-kicker">Étudiant MMI</p>
+                <p class="hero-sub">Métiers du multimédia et de l’internet</p>
+            </div>
 
-    <div class="marquee">
-        <span>PROJETS SÉLECTIONNÉS ✱ PROJETS SÉLECTIONNÉS ✱ PROJETS SÉLECTIONNÉS ✱ PROJETS SÉLECTIONNÉS ✱ </span>
-                <span>PROJETS SÉLECTIONNÉS ✱ PROJETS SÉLECTIONNÉS ✱ PROJETS SÉLECTIONNÉS ✱ PROJETS SÉLECTIONNÉS ✱
-                    PROJETS SÉLECTIONNÉS ✱ PROJETS SÉLECTIONNÉS ✱</span>
+            <div class="hero-title-row">
+                <h1>Portfolio</h1>
 
-    </div>
+                <div class="hero-art" aria-hidden="true">
+                    <svg class="star" viewBox="0 0 73 73">
+                        <polygon points="36.5,4 44,28 69,28 49,43 56.5,67 36.5,52 16.5,67 24,43 4,28 29,28"
+                            fill="#ffb411" />
+                    </svg>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container2">
-            <div class="about-content">
-                <p class="about-description">
-                    Tout d'abord, bienvenue sur mon portfolio.
+                    <svg class="mascot" viewBox="0 0 280 230" role="img">
+                        <ellipse cx="210" cy="48" rx="28" ry="22" fill="#ec89b0" />
+                        <path
+                            d="M168 38 C190 8, 250 18, 248 70 C246 118, 210 150, 168 142 C126 134, 118 86, 140 54 C150 40, 156 42, 168 38 Z"
+                            fill="#cdc53d" />
+                        <ellipse cx="188" cy="78" rx="5" ry="8" fill="#1a1a1a" />
+                        <ellipse cx="214" cy="78" rx="5" ry="8" fill="#1a1a1a" />
+                        <path d="M190 98 C198 108, 210 108, 218 98" fill="none" stroke="#1a1a1a" stroke-width="4"
+                            stroke-linecap="round" />
+                        <path d="M236 92 C268 70, 278 110, 252 128" fill="none" stroke="#cdc53d" stroke-width="18"
+                            stroke-linecap="round" />
+                        <ellipse cx="258" cy="128" rx="12" ry="10" fill="#cdc53d" />
+                        <path
+                            d="M90 150 C120 110, 170 150, 210 148 C240 170, 220 198, 150 198 C90 198, 70 170, 90 150 Z"
+                            fill="#ec89b0" opacity="0.9" />
+                    </svg>
+                </div>
+            </div>
 
-                    Je me nomme Cloé , j'ai 19 ans et je suis originaire de Bergerac. Je réalise des études en BUT MMI à
-                    Limoges et grâce à
-                    ça, je me suis découvert une passion pour le webdesign et le graphisme.
-
-                    Je suis une personne créative, qui adore faire des découvertes et apprendre de nombreuses choses, un
-                    peu timide mais qui
-                    a la joie de vivre.
-
-                    En espérant que mon profil vous plaira, je vous laisse explorer mon portfolio.
+            <div class="hero-tags">
+                <p class="pill">Webdesign &amp; création digitale</p>
+                <p class="skills">
+                    UX/UI
+                    <span class="dot"></span>
+                    Identité visuelle
+                    <span class="dot"></span>
+                    Webdesign
                 </p>
             </div>
+        </section>
+
+        <div class="color-bar" aria-hidden="true">
+            <span class="bar-green"></span>
+            <span class="bar-pink"></span>
+            <span class="bar-yellow"></span>
         </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section class="projects" id="projets">
-        <div class="container3">
-            <h2 class="section-title">
-                Projets <span class="text-gray">sélectionnés</span>
-            </h2>
+        <section class="about" id="realisations">
+            <div class="about-title">
+                <h2>Qui suis-je ?</h2>
+                <svg class="scribble scribble-right" viewBox="0 0 70 50" aria-hidden="true">
+                    <path d="M8 28 C22 8, 40 8, 62 22" fill="none" stroke="#ec89b0" stroke-width="4"
+                        stroke-linecap="round" />
+                    <path d="M18 6 C28 26, 40 34, 52 44" fill="none" stroke="#ec89b0" stroke-width="4"
+                        stroke-linecap="round" />
+                    <path d="M40 4 C36 20, 42 32, 58 44" fill="none" stroke="#ec89b0" stroke-width="4"
+                        stroke-linecap="round" />
+                </svg>
+            </div>
 
-            <div class="carousel-container">
-                <div class="carousel-wrapper">
-                    <div class="carousel-track" id="carouselTrack">
-                        <!-- Slide 1 -->
-                        <div class="carousel-slide"><a href="projet1.html">
-                            <img src="./asset/carte de tarot.jpg" alt="Branding">
-                            <div class="project-overlay">
-                                <span class="project-category">GRAPHISME</span>
-                                <h3 class="project-title">Cartes de tarot</h3>
-                            </div></a>
-                        </div>
+            <div class="about-text">
+                <p>
+                    Hello ! Je suis Cloé Delage. Actuellement en 3ème année de
+                    <strong class="hl-green">BUT MMI</strong>, je suis passionnée par l’
+                    <strong class="hl-pink">UX/UI Design</strong> et le
+                    <strong class="hl-pink">Webdesign</strong>.
+                </p>
+                <p>
+                    Mon objectif ? Allier
+                    <strong class="hl-yellow">esthétisme</strong> et
+                    <strong class="hl-yellow">fonctionnalité</strong>
+                    pour concevoir des interfaces intuitives, accessibles et centrées sur l’utilisateur.
+                </p>
+                <p>
+                    Ce qui m’anime au quotidien, c’est de résoudre des problèmes par le
+                    <strong class="hl-green">design</strong>. Je suis convaincue qu’une belle interface n’est réussie
+                    que si elle est
+                    <strong class="hl-pink">facile</strong> à utiliser.
+                </p>
+                <p>
+                    <strong class="hl-yellow">Curieuse</strong>,
+                    <strong class="hl-yellow">créative</strong>
+                    et toujours à l’affût des nouvelles tendances du web, j’utilise mes compétences pour
+                    <strong class="hl-green">donner vie</strong>
+                    à des projets numériques pertinents et engageants.
+                </p>
+                <p>Bonne visite sur mon portfolio !</p>
+            </div>
+        </section>
+    </main>
 
-                        <!-- Slide 2 -->
-                        <div class="carousel-slide"><a href="projet2.html">
-                            <img src="./asset/photo3.jpg"
-                                alt="E-commerce">
-                            <div class="project-overlay">
-                                <span class="project-category">AUDIOVISUEL</span>
-                                <h3 class="project-title">Vidéo stop motion</h3>
-                            </div></a>
-                        </div>
-
-                        <!-- Slide 3 -->
-                        <div class="carousel-slide"><a href="projet3.html">
-                            <img src="./asset/photo4.jpg"
-                                alt="Motion Design">
-                            <div class="project-overlay">
-                                <span class="project-category">Stratégie Digitale</span>
-                                <h3 class="project-title">Site Onepage</h3>
-                            </div></a>
-                        </div>
-
-                        <!-- Slide 4 -->
-                        <div class="carousel-slide"><a href="projet4.html">
-                            <img src="./asset/photo8.png"
-                                alt="App Mobile">
-                            <div class="project-overlay">
-                                <span class="project-category">DEVELOPPEMENT</span>
-                                <h3 class="project-title">Site Streaming</h3>
-                            </div></a>
-                        </div>
-
-                        <div class="carousel-slide"><a href="projet5.html">
-                            <img src="./asset/photo13.jpg" alt="Branding">
-                            <div class="project-overlay">
-                                <span class="project-category">WEBDESIGNER</span>
-                                <h3 class="project-title">Site E-commerce</h3>
-                            </div></a>
-                        </div>
-
-                        <div class="carousel-slide"><a href="projet6.html">
-                            <img src="./asset/photo15.jpg" alt="Branding">
-                            <div class="project-overlay">
-                                <span class="project-category">GRAPHISME</span>
-                                <h3 class="project-title">Site Onepage Huile D'olive</h3>
-                            </div></a>
-                        </div>
-                        <div class="carousel-slide"><a href="projet7.html">
-                            <img src="./asset/photo18.jpg" alt="Branding">
-                            <div class="project-overlay">
-                                <span class="project-category">GRAPHISME</span>
-                                <h3 class="project-title">Application Rencontre Sportive</h3>
-                            </div></a>
-                        </div>
-                        <div class="carousel-slide"><a href="projet8.html">
-                            <img src="./asset/photo22.jpg" alt="Branding">
-                            <div class="project-overlay">
-                                <span class="project-category">GRAPHISME</span>
-                                <h3 class="project-title">Affiche Motion Design</h3>
-                            </div></a>
-                        </div>
-                        <div class="carousel-slide"><a href="projet9.html">
-                            <img src="./asset/photo25.jpg" alt="Branding">
-                            <div class="project-overlay">
-                                <span class="project-category">GRAPHISME</span>
-                                <h3 class="project-title">UGC Miam</h3>
-                            </div></a>
-                        </div>
-                        
-                    </div>
-                    <div class="view-more-container">
-                        <a href="toutlesprojets.html" class="view-more-btn">
-                            <span>Voir tous les projets</span>
-                            <svg class="arrow-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <line x1="5" y1="12" x2="19" y2="12" />
-                                <polyline points="12 5 19 12 12 19" />
-                            </svg>
-                        </a>
-                    </div>
-                    </div>
+    <footer class="footer" id="contact">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <p class="footer-logo">Portfolio</p>
+                <p class="footer-desc">
+                    Designer UX/UI. Étudiante MMI, disponible pour des projets et stages.
+                </p>
+                <div class="socials">
+                    <a href="#">Behance</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Dribbble</a>
                 </div>
+            </div>
 
-                <!-- Boutons de navigation -->
-                <button class="carousel-btn prev" id="prevBtn">‹</button>
-                <button class="carousel-btn next" id="nextBtn">›</button>
-
-                <!-- Indicateurs -->
-                <div class="carousel-indicators" id="carouselIndicators"></div>
+            <div class="footer-links">
+                <div>
+                    <p class="footer-label">Navigation</p>
+                    <a href="#accueil">Accueil</a>
+                    <a href="#realisations">Qui suis-je</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div>
+                    <p class="footer-label">Contact</p>
+                    <p>cloe.delage@email.com</p>
+                    <p>+33 6 00 00 00 00</p>
+                    <p>France</p>
+                </div>
             </div>
         </div>
 
-        <div class="marquee">
-            <span>PROJETS SÉLECTIONNÉS ✱ PROJETS SÉLECTIONNÉS ✱ PROJETS SÉLECTIONNÉS ✱ PROJETS SÉLECTIONNÉS ✱ PROJETS SÉLECTIONNÉS ✱ PROJETS SÉLECTIONNÉS ✱ PROJETS SÉLECTIONNÉS ✱</span>
-            <span>PROJETS SÉLECTIONNÉS ✱ PROJETS SÉLECTIONNÉS ✱ PROJETS SÉLECTIONNÉS ✱ PROJETS SÉLECTIONNÉS ✱ PROJETS SÉLECTIONNÉS ✱
-                            PROJETS SÉLECTIONNÉS ✱ PROJETS SÉLECTIONNÉS ✱</span>
-
-        </div>
-    </section>
-
-    <!-- Contact Cards Section -->
-    <section class="contact-cards">
-        <div class="container2">
-            <h2 class="section-title">Retrouvez-moi</h2>
-            <div class="cards-grid">
-                    <div class="contact-card">
-                        <a href="./asset/CV_Cloé.pdf"  target="_blank">
-                            <svg class="card-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                                <polyline points="14 2 14 8 20 8" />
-                            </svg>
-                            <h3>Mon CV</h3>
-                            <p>Télécharger</p>
-                            <svg class="card-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <line x1="7" y1="17" x2="17" y2="7" />
-                                <polyline points="7 7 17 7 17 17" />
-                            </svg>
-                        </a>
-                    </div>
- 
-
-                <div class="contact-card"><a href="https://www.linkedin.com/in/clo%C3%A9-delage-155b19331/">
-                     
-                    <svg class="card-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                        <rect x="2" y="9" width="4" height="12" />
-                        <circle cx="4" cy="4" r="2" />
-                    </svg>
-                    <h3>LinkedIn</h3>
-                    <p>Me suivre</p>
-                    <svg class="card-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor">
-                        <line x1="7" y1="17" x2="17" y2="7" />
-                        <polyline points="7 7 17 7 17 17" />
-                    </svg>
-                </div></a>
-
-                <div class="contact-card"><a href="mailto:cloedelage12@gmail.com">
-                    <svg class="card-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                        <polyline points="22,6 12,13 2,6" />
-                    </svg>
-                    <h3>Email</h3>
-                    <p>Me contacter</p>
-                    <svg class="card-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor">
-                        <line x1="7" y1="17" x2="17" y2="7" />
-                        <polyline points="7 7 17 7 17 17" />
-                    </svg>
-                </div></a>
-            </div>
-        </div>
-    </section>
-
-    <div class="disco-divider">
-        <div class="disco-ball">
-            <div class="disco-lights"></div>
-            <div class="disco-lights"></div>
-            <div class="disco-lights"></div>
-            <div class="disco-lights"></div>
-        </div>
-        <div class="retro-line left"></div>
-        <div class="retro-line right"></div>
-        <div class="floating-star star-1">✦</div>
-        <div class="floating-star star-2">★</div>
-        <div class="floating-star star-3">✦</div>
-    </div>
-    <!-- Skills Section -->
-    <section class="skills">
-        <div class="container2">
-            <h2 class="section-title">Mes Outils</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">
-                    <svg width="48" height="48" viewBox="0 0 200 300" fill="currentColor">
-                        <path d="M50 300c27.6 0 50-22.4 50-50v-50H50c-27.6 0-50 22.4-50 50s22.4 50 50 50z" />
-                        <path d="M0 150c0-27.6 22.4-50 50-50h50v100H50c-27.6 0-50-22.4-50-50z" />
-                        <path d="M0 50C0 22.4 22.4 0 50 0h50v100H50C22.4 100 0 77.6 0 50z" />
-                        <path d="M100 0h50c27.6 0 50 22.4 50 50s-22.4 50-50 50h-50V0z" />
-                        <path d="M200 150c0 27.6-22.4 50-50 50s-50-22.4-50-50 22.4-50 50-50 50 22.4 50 50z" />
-                    </svg>
-                    </div>
-                    <span>Figma</span>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">Ps</div>
-                    <span>Photoshop</span>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">Ae</div>
-                    <span>After Effects </span>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">Pr</div>
-                    <span>Premiere pro </span>
-                </div>
-
-
-                <div class="skill-card">
-                    <div class="skill-icon">Ai</div>
-                    <span>Illustrator</span>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="./asset/WordPress-logotype-wmark-white.png" alt="WordPress Logo" style="width:70px; height:70px; fill:currentColor;">
-                    </div>
-                    <span>WordPress</span>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">
-                      <img src="./asset/icons8-html-5.svg" alt="WordPress Logo" style="width:70px; height:70px; fill:currentColor;">
-
-                    </div>
-                    <span>HTML</span>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">
-                     <img src="./asset/css3.png" alt="WordPress Logo" style="width:70px; height:70px; fill:currentColor;">
-
-                    </div>
-                    <span>CSS</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container2">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>CONTACT</h4>
-                    <p><a href="mailto:cloedelage12@gmail.com">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                            <polyline points="22,6 12,13 2,6" />
-                        </svg>
-                        cloedelage12@gmail.com
-                    </p></a>
-                    <p><a href="mailto:07 66 87 09 51">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path
-                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                        </svg>
-                        07 66 87 09 51
-                    </p></a>
-                    <p>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                            <rect x="2" y="9" width="4" height="12" />
-                            <circle cx="4" cy="4" r="2" />
-                        </svg>
-                        <a href="https://www.linkedin.com/in/clo%C3%A9-delage-155b19331/">LinkedIn</a>
-                    </p>
-                </div>
-
-                <div class="footer-section">
-                    <h4>NAVIGATION</h4>
-                    <p><a href="#projets">Projets</a></p>
-                    <p><a href="#about">À propos</a></p>
-                    <p><a href="#contact">Contact</a></p>
-                </div>
-
-        
-            </div>
-
-            <div class="footer-bottom">
-                <div class="logo">Portfolio.</div>
-                <a href="#home" class="back-top">Retour en haut ↑</a>
-            </div>
+        <div class="footer-bottom">
+            <p>© 2024 Cloé Delage — Tous droits réservés</p>
+            <svg class="wave" viewBox="0 0 80 27" aria-hidden="true">
+                <path d="M2 14 C12 4, 20 24, 30 14 C40 4, 48 24, 58 14 C68 4, 74 20, 78 14" fill="none" stroke="#ffb411"
+                    stroke-width="3" stroke-linecap="round" />
+            </svg>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 
 </html>

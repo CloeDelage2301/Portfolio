@@ -4,191 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet Branding - Portfolio</title>
+    <title>Projet 1 | Cloé Delage</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="style-projet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Navigation Bar -->
-    <nav class="nav-bar">
-        <a href="index.html" class="back-link">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M19 12H5M12 19l-7-7 7-7" />
-            </svg>
-            Retour
-        </a>
-        <div class="logo-text">Portfolio.</div>
+    <nav>
+        <a href="index.html" class="logo">CLOÉ.D</a>
+        <div class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="toutlesprojets.html" class="active">Projets</a>
+        </div>
     </nav>
 
-    <!-- Hero Banner -->
-    <section class="hero-banner">
-        <div class="category-tag">GRAPHISME • 2024</div>
-        <h1 class="project-title-main">Cartes de Tarot</h1>
-        <p class="project-intro">Création d'une identité visuelle complète pour un jeu de cartes de tarot de marseille</p>
-    </section>
-
-    <!-- Info Cards -->
-    <section class="info-section">
-        <div class="info-container">
-            
-            <div class="info-box">
-                <div class="info-label">Date</div>
-                <div class="info-value">Octobre - Novembre 2024</div>
-            </div>
-            <div class="info-box">
-                <div class="info-label">Durée</div>
-                <div class="info-value">1 semaines</div>
-            </div>
-            <div class="info-box">
-                <div class="info-label">Rôle</div>
-                <div class="info-value">Designer graphique</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Image -->
-    <section class="featured-image-section">
-        <div class="img-wrapper" style="width: 26.3rem;">
-            <img src="./asset/carte-1.jpg" alt="Image principale du projet"
-                class="featured-img">
-        </div>
-        <div class="img-wrapper">
-            <img src="./asset/carte 2.jpg" alt="Image principale du projet"
-                class="featured-img">
-        </div>
-        <div class="img-wrapper">
-            <img src="./asset/carte 3.jpg" alt="Image principale du projet"
-                class="featured-img">
-        </div>
-        <div class="img-wrapper">
-            <img src="./asset/carte 4.jpg" alt="Image principale du projet"
-                class="featured-img">
-        </div>
-        <div class="img-wrapper">
-            <img src="./asset/carte 5.jpg" alt="Image principale du projet"
-                class="featured-img">
-        </div>
-    </section>
-
-    <!-- Description -->
-    <section class="description-zone">
-        <div class="description-wrapper">
-            <h2 class="section-heading">À propos du projet</h2>
-            <p class="text-paragraph">
-            Dans ce projet, il m’était demandé de créer un jeu de cartes du Tarot de Marseille en m’inspirant de l’univers graphique
-            de deux graphistes contemporains. L’objectif initial consistait à comprendre leur démarche artistique, leurs codes
-            visuels et leurs intentions pour pouvoir m’en approprier les principes.
+    <main class="hero-project">
+        <header>
+            <span class="tag" style="background: var(--accent-soft); color: var(--accent-color); border:none;">Étude de
+                cas 01</span>
+            <h1 style="margin: 1rem 0;">Nom du <span>Projet 1</span></h1>
+            <p style="color: var(--text-secondary); max-width: 700px; margin: 0 auto 3rem;">
+                Une description courte et percutante de ce que tu as réalisé pour ce client ou ce projet personnel.
             </p>
-            <p class="text-paragraph">
-            J’ai commencé par analyser en profondeur les styles, les symboles, les couleurs et les compositions propres à chaque
-            graphiste. Cette étape m’a permis de dégager les éléments essentiels de leurs identités visuelles. À partir de ce
-            projet, j’ai élaboré un jeu de cartes illustré en faisant des choix esthétiques argumentés, afin de construire une
-            adaptation cohérente du Tarot dans ces deux univers.
-            </p>
-            <p class="text-paragraph">
-Pour produire cette série d’arcanes originales, j’ai utilisé Photoshop et Illustrator. L'objectif était de créer 15
-cartes en vecteurs sur Illustrator et 15 autres cartes sur Photoshop. Le résultat final montre ma capacité à analyser un
-style graphique, à m’y adapter et à créer des visuels originaux personnels.
-            </p>
+        </header>
+
+        <div class="project-hero-container">
+            <img src="https://via.placeholder.com/1200x600" alt="Aperçu Projet 1" class="project-hero-img">
         </div>
-    </section>
 
+        <section class="project-details">
+            <div class="project-description">
+                <h2>Le Brief</h2>
+                <p>Explique ici le problème que tu devais résoudre. Pourquoi ce projet existe-t-il ? Quel était
+                    l'objectif principal ?</p>
 
+                <h2 style="margin-top: 2rem;">Ma Solution</h2>
+                <p>Décris ton processus créatif ou technique. Quelles technologies as-tu utilisées ? Pourquoi ce choix
+                    esthétique ?</p>
+            </div>
 
-    <!-- Tools Used -->
-    <section class="tools-section">
-        <div class="tools-container">
-            <h2 class="tools-title">Outils utilisés</h2>
-            <div class="tools-grid">
-                <div class="tool-item">
-                    <div class="tool-icon-display">Ai</div>
-                    <span class="tool-name">Adobe Illustrator</span>
-                    <p class="tool-description">Pour les 15 cartes illustrées dans le style de l'artiste</p>
+            <aside class="project-info">
+                <div class="bento-card" style="padding: 1.5rem;">
+                    <h3 style="font-size: 1rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1px;">
+                        Infos</h3>
+                    <ul style="list-style: none; color: var(--text-secondary);">
+                        <li style="margin-bottom: 0.5rem;"><strong>Client :</strong> Interne</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Rôle :</strong> Design & Dev</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Date :</strong> 2026</li>
+                        <li><strong>Lien :</strong> <a href="#" style="color: var(--accent-color);">Voir le site
+                                live</a></li>
+                    </ul>
                 </div>
-                <div class="tool-item">
-                    <div class="tool-icon-display">Ps</div>
-                    <span class="tool-name">Adobe Photoshop</span>
-                    <p class="tool-description"> Pour les 15 cartes demandées et créées dans le style de l'artiste</p>
-                </div>
-                            
-        </div>
-    </section>
+            </aside>
+        </section>
 
-
-    <!-- Project Navigation -->
-    <section class="projects-nav">
-        <div class="nav-projects-container">
-            <a href="projet-app.html" class="project-nav-link">
-                <span class="nav-small-text">Projet précédent</span>
-                <span class="nav-project-name">Application Mobile</span>
-            </a>
-
-            <a href="index.html#projets" class="center-button">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <rect x="3" y="3" width="7" height="7"></rect>
-                    <rect x="14" y="3" width="7" height="7"></rect>
-                    <rect x="14" y="14" width="7" height="7"></rect>
-                    <rect x="3" y="14" width="7" height="7"></rect>
-                </svg>
-                Tous les projets
-            </a>
-
-            <a href="projet2.html" class="project-nav-link">
-                <span class="nav-small-text">Projet suivant</span>
-                <span class="nav-project-name">Vidéo Stop Motion</span>
-            </a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-<footer class="footer">
-    <div class="container2">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>CONTACT</h4>
-                <p><a href="mailto:cloedelage12@gmail.com">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                            <polyline points="22,6 12,13 2,6" />
-                        </svg>
-                        cloedelage12@gmail.com
-                </p></a>
-                <p><a href="mailto:07 66 87 09 51">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path
-                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                        </svg>
-                        07 66 87 09 51
-                </p></a>
-                <p>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                        <rect x="2" y="9" width="4" height="12" />
-                        <circle cx="4" cy="4" r="2" />
-                    </svg>
-                    <a href="https://www.linkedin.com/in/clo%C3%A9-delage-155b19331/">LinkedIn</a>
-                </p>
-            </div>
-
-            <div class="footer-section">
-                <h4>NAVIGATION</h4>
-                <p><a href="#projets">Projets</a></p>
-                <p><a href="#about">À propos</a></p>
-                <p><a href="#contact">Contact</a></p>
-            </div>
-
-
+        <div class="bento-grid" style="margin-top: 4rem;">
+            <div class="bento-card" style="height: 300px; background: #eee;"></div>
+            <div class="bento-card" style="height: 300px; background: #eee;"></div>
         </div>
 
-        <div class="footer-bottom">
-            <div class="logo">Portfolio.</div>
-            <a href="#home" class="back-top">Retour en haut ↑</a>
-        </div>
-    </div>
-</footer>
+        <footer style="margin-top: 5rem; text-align: center;">
+            <a href="toutlesprojets.html" class="btn btn-outline">← Retour à tous les projets</a>
+        </footer>
+    </main>
 
-<script src="script.js"></script>
 </body>
 
 </html>
